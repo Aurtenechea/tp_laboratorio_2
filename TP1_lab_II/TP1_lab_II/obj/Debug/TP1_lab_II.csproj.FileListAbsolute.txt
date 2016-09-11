@@ -1,0 +1,9 @@
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\bin\Debug\TP1_lab_II.exe.config
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\bin\Debug\TP1_lab_II.exe
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\bin\Debug\TP1_lab_II.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\obj\Debug\TP1_lab_II.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\obj\Debug\TP1_lab_II.Form1.resources
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\obj\Debug\TP1_lab_II.Properties.Resources.resources
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\obj\Debug\TP1_lab_II.csproj.GenerateResource.Cache
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\obj\Debug\TP1_lab_II.exe
+C:\Users\Nacho\Documents\programas\programasCsharp\guiaLab2Aurtenechea\TP1_lab_II\TP1_lab_II\obj\Debug\TP1_lab_II.pdb
