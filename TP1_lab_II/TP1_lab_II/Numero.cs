@@ -13,14 +13,17 @@ namespace TP1_lab_II
         /// <summary>
         /// constructor por defecto
         /// </summary>
-        public Numero() { }
+        public Numero() 
+        {
+            numero = 0;
+        }
 
         /// <summary>
         /// sobrecarga del constructor. seteea el atributo numero con el numero contenido en  
         /// strNum. Si str num no es un numero valido el valor sera 0.
         /// </summary>
         /// <param name="strNum">string con el numero con el que se cargara el atributo strNum</param>
-        public Numero(String strNum) 
+        public Numero(String strNum) :this() 
         {
             this.setNumero(strNum);
         }
@@ -50,7 +53,7 @@ namespace TP1_lab_II
         /// recibe un string y si es posible castearlo a double seteara con ese valor el atributo numero, de lo contrario lo setea en cero.
         /// </summary>
         /// <param name="str">el string con el numero a setear</param>
-        public void setNumero(string str) 
+        private void setNumero(string str) 
         {
             this.numero = Numero.validarNumero(str);
         }
