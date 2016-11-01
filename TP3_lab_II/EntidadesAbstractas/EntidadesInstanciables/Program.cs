@@ -11,6 +11,18 @@ namespace EntidadesInstanciables
     {
         static void Main(string[] args)
         {
+            Alumno test = new Alumno(1, "nacho", "aurtenechea", "35299333", Persona.ENacionalidad.Argentino, PersonaGimnasio.EClases.Natacion, PersonaGimnasio.EEstadoDeCuenta.Sarasa);
+            Console.WriteLine(test.ToString());
+
+            if (test == PersonaGimnasio.EClases.CrossFit)
+                Console.Write("Toma esa clase.");
+            else
+                Console.Write("No toma esa clase.");
+
+                
+            Console.ReadKey();
+
+                
         }
     }
 }

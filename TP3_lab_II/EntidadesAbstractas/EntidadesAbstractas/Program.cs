@@ -10,6 +10,8 @@ namespace EntidadesAbstractas
     {
         static void Main(string[] args)
         {
+            
+
         }
     }
 }
