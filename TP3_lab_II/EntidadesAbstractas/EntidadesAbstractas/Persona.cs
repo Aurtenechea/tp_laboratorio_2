@@ -11,7 +11,7 @@ namespace EntidadesAbstractas
         public enum ENacionalidad
         { 
             Argentino,
-            Extrangero
+            Extranjero
         }
 
         private string _nombre;

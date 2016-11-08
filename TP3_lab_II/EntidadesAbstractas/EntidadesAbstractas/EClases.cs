@@ -6,13 +6,10 @@ using System.Threading.Tasks;
 
 namespace EntidadesAbstractas
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-
-            
-
-        }
-    }
+    //public enum EClases  // va adentro de gimnasio??
+    //{
+    //    CrossFit,
+    //    Natacion,
+    //    Pilates
+    //}
 }

@@ -8,5 +8,15 @@ namespace Archivos
 {
     class Texto : IArchivo<Texto>
     {
+    
+        public bool guardar(string archivo, Texto datos)
+        {
+    	    throw new NotImplementedException();
+        }
+
+        public bool leer(string archivo, out Texto datos)
+        {
+    	    throw new NotImplementedException();
+        }
     }
 }

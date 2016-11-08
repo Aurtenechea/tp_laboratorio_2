@@ -8,17 +8,8 @@ namespace EntidadesAbstractas
 {
     public abstract class PersonaGimnasio :Persona
     {
-        public enum EClases
-        {
-            CrossFit,
-            Natacion,
-            Pilates
-        }
-        public enum EEstadoDeCuenta
-        {
-            Deudor,
-            Sarasa
-        }
+        
+        
 
         private int _identificador;
 
@@ -50,7 +41,7 @@ namespace EntidadesAbstractas
 
         public static bool operator == (PersonaGimnasio pg1, PersonaGimnasio pg2)
         {
-            if (pg1.DNI == pg2.DNI || pg1._identificador == pg2._identificador)
+            if (pg1.GetType() == pg2.GetType() && (pg1.DNI == pg2.DNI || pg1._identificador == pg2._identificador) )
                 return true;
                 return false;
         }

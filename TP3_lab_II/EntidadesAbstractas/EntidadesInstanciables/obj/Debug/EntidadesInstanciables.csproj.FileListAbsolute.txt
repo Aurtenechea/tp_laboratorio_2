@@ -6,3 +6,5 @@ C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\E
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesInstanciables\bin\Debug\EntidadesAbstractas.pdb
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesInstanciables\obj\Debug\EntidadesInstanciables.exe
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesInstanciables\obj\Debug\EntidadesInstanciables.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesInstanciables\bin\Debug\Excepciones.exe
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesInstanciables\bin\Debug\Excepciones.pdb

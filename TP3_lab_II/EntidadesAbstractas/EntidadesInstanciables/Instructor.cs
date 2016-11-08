@@ -7,16 +7,18 @@ using EntidadesAbstractas;
 
 namespace EntidadesInstanciables
 {
-    sealed class Instructor : PersonaGimnasio  
+    sealed public class Instructor : PersonaGimnasio  
     {
 
-        private Queue <EClases> _clasesDelDia;
+        private Queue <Gimnasio.EClases> _clasesDelDia;
         private static Random _random;
 
 
         private void _randomClases()
         {
-            this._clasesDelDia.Enqueue( (EClases) Instructor._random.Next(1, 3) );
+            this._clasesDelDia.Enqueue((Gimnasio.EClases)Instructor._random.Next(0, 4));
+            //Console.WriteLine( Instructor._random.Next(0, 3) );
+            
         }
 
 
@@ -29,7 +31,7 @@ namespace EntidadesInstanciables
         public Instructor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id, nombre, apellido, dni, nacionalidad)
         {
-            this._clasesDelDia = new Queue<EClases>();
+            this._clasesDelDia = new Queue<Gimnasio.EClases>();
             for (int i = 0; i < 2; i++)
             {
                 this._randomClases();
@@ -37,19 +39,26 @@ namespace EntidadesInstanciables
         }
 
         protected string MostrarDatos()
-        {
-            return base.MostrarDatos() + this._clasesDelDia.ToString();
+        { 
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("CARNET NUMERO: ");
+            // falta id
+            sb.AppendLine("CLASES DEL DIA: ");
+            sb.AppendLine(this._clasesDelDia.ElementAt(0).ToString());
+            sb.AppendLine(this._clasesDelDia.ElementAt(1).ToString());
+
+            return sb.ToString() ;
         }
-    
-        public static bool operator != (Instructor i, EClases clase)
+
+        public static bool operator !=(Instructor i, Gimnasio.EClases clase)
         {
             return !(i == clase);
         }
 
-        public static bool operator ==(Instructor i, EClases clase)
+        public static bool operator ==(Instructor i, Gimnasio.EClases clase)
         {
             bool flag = false;
-            foreach (EClases item in i._clasesDelDia)
+            foreach (Gimnasio.EClases item in i._clasesDelDia)
             {
                 if (item == clase)
                     flag = true;

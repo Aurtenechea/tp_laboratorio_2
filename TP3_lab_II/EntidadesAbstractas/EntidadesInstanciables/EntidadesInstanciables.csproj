@@ -56,6 +56,10 @@
       <Project>{9cf1a63e-33f8-400b-a6ed-5608c7acad5f}</Project>
       <Name>EntidadesAbstractas</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Excepciones\Excepciones.csproj">
+      <Project>{d9a8548a-3a70-4bcf-bf78-e0e0564a651a}</Project>
+      <Name>Excepciones</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
