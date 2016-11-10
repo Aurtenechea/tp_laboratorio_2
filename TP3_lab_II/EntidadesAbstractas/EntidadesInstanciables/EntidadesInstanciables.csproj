@@ -52,6 +52,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Archivos\Archivos.csproj">
+      <Project>{f8cd962b-156f-4336-aca6-8a1f0072ec82}</Project>
+      <Name>Archivos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EntidadesAbstractas\EntidadesAbstractas.csproj">
       <Project>{9cf1a63e-33f8-400b-a6ed-5608c7acad5f}</Project>
       <Name>EntidadesAbstractas</Name>

@@ -8,8 +8,9 @@ namespace Archivos
 {
     public interface IArchivo<T> 
     {
-        public bool guardar(string archivo, T datos);
+        // no se puede usar static en una interfaz
+        bool guardar(string archivo, T datos);
 
-        public bool leer(string archivo, out T datos);
+        bool leer(string archivo, out T datos);
     }
 }

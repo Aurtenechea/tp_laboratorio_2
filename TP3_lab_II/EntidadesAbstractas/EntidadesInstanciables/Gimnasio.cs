@@ -5,9 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using EntidadesAbstractas;
 using Excepciones;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace EntidadesInstanciables
 {
+
+
+    [Serializable]
     public class Gimnasio
     {
         public enum EClases
@@ -21,7 +26,47 @@ namespace EntidadesInstanciables
         private List<Alumno> _alumnos;
         private List<Instructor> _instructores;
         private List<Jornada> _jornadas;
+        //======================
+        public List<Alumno> LsAlumno
+        {
+            get
+            {
+                return this._alumnos;
+            }
+            set 
+            {
+                this._alumnos = value;
+            }
+        }
 
+        //public List<int> LsAlumno 
+        //{
+        //    get { 
+        //        List<int> var = new List<int>();
+        //        var.Add(4);
+        //        return var;
+        //    }
+        //}
+        public List<Instructor> LsInstr
+        {
+            get { return this._instructores; }
+            set
+            {
+                this._instructores = value;
+            }
+        }
+        public List<Jornada> LsJorn
+        {
+            get { return this._jornadas; }
+            set
+            {
+                this._jornadas = value;
+            }
+        }
+
+        
+
+        //=====================
         public Jornada this[int i]
         {
             get
@@ -37,10 +82,13 @@ namespace EntidadesInstanciables
             this._jornadas = new List<Jornada>();
         }
 
-        public bool Guardar(Gimnasio gim)
+        public static bool Guardar(Gimnasio gim)
         {
-            // hacer
-            return true;
+            // hacer que use guardar de xml no de texto. Tiene que guardar serializado.
+            Archivos.Xml<Gimnasio> objXml = new Archivos.Xml<Gimnasio>();
+            if ( objXml.guardar("Gimnasio.xml",gim) )
+                return true;
+                return false; 
         }
 
         private static string MostrarDatos(Gimnasio gim)

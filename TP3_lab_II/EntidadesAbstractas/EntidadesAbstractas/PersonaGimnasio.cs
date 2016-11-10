@@ -6,12 +6,24 @@ using System.Threading.Tasks;
 
 namespace EntidadesAbstractas
 {
+    [Serializable]
     public abstract class PersonaGimnasio :Persona
     {
         
-        
-
         private int _identificador;
+
+        // eliminar
+        //para serializar
+        public int ID 
+        {
+            get { return this._identificador; }
+            set { this._identificador = value; }
+        }
+
+        public PersonaGimnasio() { }
+
+        //</eliminar>
+
 
         public PersonaGimnasio(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad) 
             :base( nombre, apellido, dni,  nacionalidad)

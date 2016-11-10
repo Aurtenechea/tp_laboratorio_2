@@ -1,0 +1,6 @@
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Archivos\bin\Debug\Archivos.exe.config
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Archivos\bin\Debug\Archivos.exe
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Archivos\bin\Debug\Archivos.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Archivos\obj\Debug\Archivos.exe
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Archivos\obj\Debug\Archivos.pdb

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 namespace EntidadesAbstractas
 {
+    [Serializable]
     public abstract class Persona
     {
         public enum ENacionalidad
@@ -81,6 +82,13 @@ namespace EntidadesAbstractas
         }
         #endregion
         #region constructores
+
+
+        //eliminar
+        public Persona() { }
+        //
+
+
         protected Persona(string nombre, string apellido, ENacionalidad nacionalidad) 
         {
             this.Nombre = nombre;

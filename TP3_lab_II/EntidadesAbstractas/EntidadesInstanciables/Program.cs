@@ -49,7 +49,9 @@ namespace EntidadesInstanciables
             Alumno a4 = new Alumno(4, "Miguel", "Hernandez", "92264456",EntidadesAbstractas.Persona.ENacionalidad.Extranjero, Gimnasio.EClases.Pilates, Alumno.EEstadoCuenta.AlDia);
             gim += a4;
             Alumno a5 = new Alumno(5, "Carlos", "Gonzalez", "12236456",EntidadesAbstractas.Persona.ENacionalidad.Argentino, Gimnasio.EClases.CrossFit, Alumno.EEstadoCuenta.AlDia);
+            //alumno igual al alumno a3
             gim += a5;
+
             Alumno a6 = new Alumno(6, "Juan", "Perez", "12234656",EntidadesAbstractas.Persona.ENacionalidad.Argentino, Gimnasio.EClases.Natacion, Alumno.EEstadoCuenta.Deudor);
             gim += a6;
             Alumno a7 = new Alumno(7, "Joaquin", "Suarez", "91122456",EntidadesAbstractas.Persona.ENacionalidad.Extranjero, Gimnasio.EClases.Natacion,Alumno.EEstadoCuenta.AlDia);
@@ -102,27 +104,33 @@ namespace EntidadesInstanciables
             }
             Console.WriteLine(gim.ToString());
             Console.ReadKey();
-            //try
-            //{
-            //Gimnasio.Guardar(gim);
-            //Console.WriteLine("Archivo de Gimnasio guardado");
-            //}
-            //catch (ArchivosException e)
-            //{
-            //Console.WriteLine(e.Message);
-            //}
-            //try
-            //{
-            //int jornada = 0;
-            //Jornada.Guardar(gim[jornada]);
-            //Console.WriteLine("Archivo de Jornada {0} guardado", jornada);
-            //}
-            //catch (ArchivosException e)
-            //{
-            //Console.WriteLine(e.Message);
-            //}
-            //Console.ReadKey();
-        
+            try
+            {
+                Gimnasio.Guardar(gim);
+                Console.WriteLine("Archivo de Gimnasio guardado");
+            }
+            catch (ArchivosException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            try
+            {
+            int jornada = 0;
+            Jornada.Guardar(gim[jornada]); // jornada es un int y vale 0...
+            Console.WriteLine("Archivo de Jornada {0} guardado", jornada);
+            }
+            catch (ArchivosException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            Console.ReadKey();
+
+
+            //agregado por mi ========================================================
+
+            gim = null;
+            Archivos.Xml<Gimnasio> auxLeer= new Archivos.Xml<Gimnasio>();
+            auxLeer.leer("Gimnasio.xml", out gim);
 
         }
     }

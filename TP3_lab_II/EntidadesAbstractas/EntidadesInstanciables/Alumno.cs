@@ -8,6 +8,7 @@ using EntidadesAbstractas;
 
 namespace EntidadesInstanciables
 {
+    [Serializable]
     public sealed class Alumno : PersonaGimnasio
     {
 
@@ -20,6 +21,48 @@ namespace EntidadesInstanciables
 
         private Gimnasio.EClases _claseQueToma;
         private EEstadoCuenta _estadoCuenta;
+
+        // eliminar
+            public Alumno() { }
+        //private string chota;
+        //public string Chota
+        //{
+        //    get 
+        //    {
+        //        this.chota = "CHOOOTAAA";
+        //        return this.chota;
+        //    }
+        //    set 
+        //    {
+        //        this.chota = "HOLAA";            
+        //    }
+        //}
+            //son para serializar
+            public Gimnasio.EClases ClaseQueToma
+            {
+                get
+                {
+                    return this._claseQueToma;
+                }
+                set 
+                {
+                    this._claseQueToma = value;
+                }
+                
+            }
+            public EEstadoCuenta EstadoCuenta
+            {
+                get
+                {
+                    return this._estadoCuenta;
+                }
+                set
+                {
+                    this._estadoCuenta = value;
+                }
+            }
+        // </eliminar>
+
 
         public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Gimnasio.EClases claseQueToma)
             : base(id, nombre, apellido, dni, nacionalidad)

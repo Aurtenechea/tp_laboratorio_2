@@ -7,12 +7,47 @@ using EntidadesAbstractas;
 
 namespace EntidadesInstanciables
 {
+    [Serializable]
     public class Jornada
     {
 
         private List<Alumno> _alumnos;
         private Gimnasio.EClases _clase;
         private Instructor _instructor;
+
+        //eliminar
+        public List<Alumno> LsAlumnos
+        {
+            get { return this._alumnos; }
+            set
+            {
+                this._alumnos = value;
+            }
+        }
+        public Gimnasio.EClases Clase
+        {
+            get
+            {
+                return this._clase;
+            }
+            set
+            {
+                this._clase = value;
+            }
+        }
+        public Instructor Instructor
+        {
+            get
+            {
+                return this._instructor;
+            }
+            set
+            {
+                this._instructor = value;
+            }
+        }
+
+
 
         // lo lleve a gimnasio.
         //public Jornada this[int i]
@@ -23,10 +58,15 @@ namespace EntidadesInstanciables
         //    }
         //}
 
-        public bool Guardar(Jornada jornada)
+        public static bool Guardar(Jornada jornada)
         {
-            // completar
-            return true;
+            //Archivos.Texto txt = new Archivos.Texto();
+            Archivos.Texto objTexto = new Archivos.Texto();
+            
+                if (objTexto.guardar("Jornada.txt", jornada.ToString()))
+                    // el archivo se encontrara en EntidadesInstanciables/bin/Debug/
+                    return true;
+                    return false;
         }
 
         private Jornada() 
@@ -43,10 +83,9 @@ namespace EntidadesInstanciables
 
         public string ToString() 
         {
-            // completar
            StringBuilder sb = new StringBuilder();
            sb.AppendLine("JORNADA:");
-           sb.AppendLine("CLASE DE: " + this._clase + " POR NOMBRE COMPLETO: " + this._instructor.Apellido + ", " + this._instructor.Nombre);
+           sb.AppendLine("CLASE DE " + this._clase + " POR NOMBRE COMPLETO: " + this._instructor.Apellido + ", " + this._instructor.Nombre);
            sb.AppendLine("NACIONALIDAD: " + this._instructor.Nacionalidad);
            sb.AppendLine("");
            sb.AppendLine(this._instructor.ToString());

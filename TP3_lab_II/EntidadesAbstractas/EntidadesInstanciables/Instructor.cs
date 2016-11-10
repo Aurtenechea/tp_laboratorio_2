@@ -7,11 +7,30 @@ using EntidadesAbstractas;
 
 namespace EntidadesInstanciables
 {
+    [Serializable]
     sealed public class Instructor : PersonaGimnasio  
     {
 
         private Queue <Gimnasio.EClases> _clasesDelDia;
         private static Random _random;
+
+        //eliminar
+        public Gimnasio.EClases[] ClasesDelDia
+        {
+            get
+            {   
+                Gimnasio.EClases[] arrayEclases= new Gimnasio.EClases[2] ;
+                this._clasesDelDia.CopyTo(arrayEclases, 0);
+                return arrayEclases;
+            }
+            set
+            {
+                this._clasesDelDia = new Queue<Gimnasio.EClases>(value);
+            }
+
+        }
+        public Instructor() { }
+        //</eliminar>
 
 
         private void _randomClases()
@@ -20,7 +39,7 @@ namespace EntidadesInstanciables
             //Console.WriteLine( Instructor._random.Next(0, 3) );
             
         }
-
+        
 
         static Instructor()
         {   // en el pdf es private pero da error.
