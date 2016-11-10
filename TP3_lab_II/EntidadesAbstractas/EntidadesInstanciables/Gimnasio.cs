@@ -128,9 +128,13 @@ namespace EntidadesInstanciables
                     break;
                 }
             }
-            if(!flag)
+            if (!flag)
+            {
                 g._alumnos.Add(a);
-            return g; 
+                return g;
+            }
+            else
+                throw new AlumnoRepetidoException();
         }
 
         public static Gimnasio operator +(Gimnasio g, EClases clase)

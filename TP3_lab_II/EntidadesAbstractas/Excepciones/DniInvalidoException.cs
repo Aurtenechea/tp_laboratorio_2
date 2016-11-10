@@ -8,5 +8,10 @@ namespace Excepciones
 {
     public class DniInvalidoException : Exception
     {
+        public DniInvalidoException()
+            : base("El dni es invalido.")
+        {
+            
+        }
     }
 }

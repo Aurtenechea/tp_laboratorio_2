@@ -15,7 +15,7 @@ namespace EntidadesInstanciables
         private Gimnasio.EClases _clase;
         private Instructor _instructor;
 
-        //eliminar
+        //  <para serializar>
         public List<Alumno> LsAlumnos
         {
             get { return this._alumnos; }
@@ -46,6 +46,8 @@ namespace EntidadesInstanciables
                 this._instructor = value;
             }
         }
+        //</para serializar>
+
 
         //public Jornada this[int i] // lo lleve a gimnasio.
         //{

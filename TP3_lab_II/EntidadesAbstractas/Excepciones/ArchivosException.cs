@@ -8,5 +8,10 @@ namespace Excepciones
 {
     public  class ArchivosException : Exception
     {
+        public ArchivosException()
+            : base("No se pudo guardar en el archivo.")
+        {
+            
+        }
     }
 }

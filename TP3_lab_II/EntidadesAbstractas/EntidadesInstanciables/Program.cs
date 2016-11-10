@@ -12,7 +12,25 @@ namespace EntidadesInstanciables
     {
         static void Main(string[] args)
         {
-                
+            /*
+             * Quisiera aclarar que me resulto bastante confuso el TP.. Lleva mucho tiempo entender que es lo que se pretende que hay que hacer.
+             * Entonces uno pasa mas tiempo intentando decifrar eso, que pensando como hacer, o como resolver el problema.
+             * Incluso luego de mucho tiempo razonandolo, termina dudando.. Con lo cual se pierde mucho tiempo de trabajo.
+             *  
+             * En el punto dos de la clase persona, interpreto que debo lazar la excepcion DniInvalidoException siempre que el dni no cumpla con la 
+             * condicion descrita... No lo puse por que en el main no hay un catch que este manejando esa excepcion y pincha el programa.
+             * 
+             * Tambien encontre varios errores, si es que lo son claro.. porque tambien podrian ser errores de interpretacion mios.
+             * No detallo todas las dudas que tengo, y los "errores" que creo que encontre sobre el TP porque me llevaria demasiado tiempo..
+             * 
+             * Tampoco me queda claro si se pueden agregar metodos, propiedades, etc que no esten especificadas en el pdf. En algunos casos lo hice porque no encontre otra manera de resolverlo. 
+             * (por ejemplo para serializar)
+             * 
+             * Asi llegue hasta este punto, faltan cosas. No me dio el tiempo para hacerlas.
+             * Saludos!
+             * 
+             */
+
             Gimnasio gim = new Gimnasio();
             Alumno a1 = new Alumno(1, "Juan", "Lopez", "12234456",EntidadesAbstractas.Persona.ENacionalidad.Argentino, Gimnasio.EClases.CrossFit, Alumno.EEstadoCuenta.MesPrueba);
             

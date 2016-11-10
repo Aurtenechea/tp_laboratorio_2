@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
+using Excepciones;
 
 namespace Archivos
 {
@@ -24,11 +25,17 @@ namespace Archivos
                     aux = true;
                 }
             }
-            catch (Exception e)
+            catch
             {
-                Console.WriteLine(e.Message);
-                Console.ReadKey();
+                throw new ArchivosException();
             }
+
+            //catch (Exception e)
+            //{
+
+            //    Console.WriteLine(e.Message);
+            //    Console.ReadKey();
+            //}
             return aux;
         }
 

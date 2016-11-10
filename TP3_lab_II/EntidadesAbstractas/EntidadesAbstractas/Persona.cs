@@ -127,8 +127,9 @@ namespace EntidadesAbstractas
             if (nacionalidad == ENacionalidad.Argentino && dato <= 89999999 && dato >= 1)
                 return dato;
             else if (nacionalidad == ENacionalidad.Extranjero && dato <= 99999999 && dato >= 90000000)
-                return dato;    
-            else    
+                return dato;
+            else
+                //throw new DniInvalidoException();
                 return 0;
         }
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
