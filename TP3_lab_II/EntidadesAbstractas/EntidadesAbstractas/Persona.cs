@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using Excepciones;
+
 namespace EntidadesAbstractas
 {
     [Serializable]
@@ -77,7 +79,14 @@ namespace EntidadesAbstractas
         {
             set 
             {
+
                 this._dni = ValidarDni(this.Nacionalidad, value);
+
+                //int aux  =ValidarDni(this.Nacionalidad, value)
+                //if(aux != 0)
+                //    this._dni = aux;
+                //else 
+                //    throw new DniInvalidoException();
             }
         }
         #endregion
@@ -117,6 +126,9 @@ namespace EntidadesAbstractas
         {
             if (nacionalidad == ENacionalidad.Argentino && dato <= 89999999 && dato >= 1)
                 return dato;
+            else if (nacionalidad == ENacionalidad.Extranjero && dato <= 99999999 && dato >= 90000000)
+                return dato;    
+            else    
                 return 0;
         }
         private int ValidarDni(ENacionalidad nacionalidad, string dato)

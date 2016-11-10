@@ -15,20 +15,20 @@ namespace Archivos
         public bool guardar(string archivo, T datos)
         {
             bool aux = false;
-            //try
-            //{
+            try
+            {
                 using (XmlTextWriter escritor = new XmlTextWriter(archivo, Encoding.UTF8))
                 {
                     XmlSerializer serializador = new XmlSerializer(typeof(T));
                     serializador.Serialize(escritor, datos);
                     aux = true;
                 }
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.Message);
-            //    Console.ReadKey();
-            //}
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadKey();
+            }
             return aux;
         }
 

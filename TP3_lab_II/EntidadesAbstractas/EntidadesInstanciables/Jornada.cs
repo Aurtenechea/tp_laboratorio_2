@@ -47,10 +47,7 @@ namespace EntidadesInstanciables
             }
         }
 
-
-
-        // lo lleve a gimnasio.
-        //public Jornada this[int i]
+        //public Jornada this[int i] // lo lleve a gimnasio.
         //{
         //    get
         //    {

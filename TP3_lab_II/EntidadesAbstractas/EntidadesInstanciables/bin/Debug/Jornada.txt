@@ -430,3 +430,27 @@ TOMA CLASES DE CrossFit
 
 <------------------------------------------------------------------------>
 
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Natacion
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+

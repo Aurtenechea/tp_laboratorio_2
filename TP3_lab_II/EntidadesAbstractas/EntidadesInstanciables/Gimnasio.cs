@@ -26,7 +26,8 @@ namespace EntidadesInstanciables
         private List<Alumno> _alumnos;
         private List<Instructor> _instructores;
         private List<Jornada> _jornadas;
-        //======================
+        
+        // <para serializar> ======================
         public List<Alumno> LsAlumno
         {
             get
@@ -39,14 +40,7 @@ namespace EntidadesInstanciables
             }
         }
 
-        //public List<int> LsAlumno 
-        //{
-        //    get { 
-        //        List<int> var = new List<int>();
-        //        var.Add(4);
-        //        return var;
-        //    }
-        //}
+        
         public List<Instructor> LsInstr
         {
             get { return this._instructores; }
@@ -63,11 +57,10 @@ namespace EntidadesInstanciables
                 this._jornadas = value;
             }
         }
+        // </para serializar> =====================
 
-        
 
-        //=====================
-        public Jornada this[int i]
+        public Jornada this[int i] // lo cambie de lugar. De jornada a gimnasio
         {
             get
             {
@@ -93,23 +86,8 @@ namespace EntidadesInstanciables
 
         private static string MostrarDatos(Gimnasio gim)
         { 
-            // hacer
+            
             StringBuilder sb=new StringBuilder();
-
-            //sb.AppendLine("====ALUMNOS=====");
-            //foreach (var item in gim._alumnos)
-            //{
-            //    sb.AppendLine(item.ToString());
-            //}
-
-            //sb.AppendLine("====INSTRUCTORES=====");
-            //foreach (var item in gim._instructores)
-            //{
-            //    sb.AppendLine(item.ToString());
-            //}
-
-            //sb.AppendLine("====Jornada=====");
-
             foreach (var item in gim._jornadas)
             {
                 sb.AppendLine(item.ToString());
@@ -144,7 +122,7 @@ namespace EntidadesInstanciables
             bool flag = false;
             foreach (Alumno item in g._alumnos)
             {
-                if (item == a) // igualando alumnos, existe el metodo para PersonaGimnasio VER QUE PASA!
+                if (item == a) 
                 { 
                     flag = true;
                     break;
@@ -158,8 +136,8 @@ namespace EntidadesInstanciables
         public static Gimnasio operator +(Gimnasio g, EClases clase)
         {
             Jornada j;
-            Instructor instructorDesignado = (g == clase); //aca error
-            //if (! instructorDesignado.Equals(null))  //!= null 
+            Instructor instructorDesignado = (g == clase);
+            
             if (!Object.Equals(instructorDesignado, null))
             {
                 j = new Jornada(clase, instructorDesignado);
@@ -187,7 +165,7 @@ namespace EntidadesInstanciables
             bool flag = false;
             foreach (Instructor item in g._instructores)
             {
-                if (item == i) // igualando alumnos, existe el metodo para PersonaGimnasio VER QUE PASA!
+                if (item == i)
                 {
                     flag = true;
                 }

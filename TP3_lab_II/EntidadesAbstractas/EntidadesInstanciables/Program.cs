@@ -12,24 +12,14 @@ namespace EntidadesInstanciables
     {
         static void Main(string[] args)
         {
-            // agregado por mi ======================================================================
-            //Alumno test = new Alumno(1, "nacho", "aurtenechea", "35299333", Persona.ENacionalidad.Extrangero, EClases.Natacion, PersonaGimnasio.EEstadoDeCuenta.Sarasa);
-            //Console.WriteLine(test.ToString());
-            //if (test == EClases.CrossFit)
-            //    Console.Write("Toma esa clase.");
-            //else
-            //    Console.Write("No toma esa clase.");
-            //Console.ReadKey();
-            //====================================================================================
-            
-    
-                   
+                
             Gimnasio gim = new Gimnasio();
             Alumno a1 = new Alumno(1, "Juan", "Lopez", "12234456",EntidadesAbstractas.Persona.ENacionalidad.Argentino, Gimnasio.EClases.CrossFit, Alumno.EEstadoCuenta.MesPrueba);
             
             gim += a1;
             try
-            {   // no se si deberia ser cargado o no...
+            {   
+                // no se si deberia ser cargado o no...
                 Alumno a2 = new Alumno(2, "Juana", "Martinez", "12234458", EntidadesAbstractas.Persona.ENacionalidad.Extranjero, Gimnasio.EClases.Natacion, Alumno.EEstadoCuenta.Deudor);
                 gim += a2;
             }
@@ -62,13 +52,6 @@ namespace EntidadesInstanciables
             gim += i1;
             Instructor i2 = new Instructor(2, "Roberto", "Juarez", "32234456",EntidadesAbstractas.Persona.ENacionalidad.Argentino);
             gim += i2;
-
-            // agregado por mi =====================================================
-            //Instructor i3 = new Instructor(8, "Juan", "Lopez", "12534456", EntidadesAbstractas.Persona.ENacionalidad.Argentino);
-            //gim += i1;
-            //Instructor i4 = new Instructor(4, "Roberto", "Juarez", "53234456", EntidadesAbstractas.Persona.ENacionalidad.Argentino);
-            //gim += i2;
-            // ======================================================================
 
             try
             {
@@ -128,9 +111,9 @@ namespace EntidadesInstanciables
 
             //agregado por mi ========================================================
 
-            gim = null;
-            Archivos.Xml<Gimnasio> auxLeer= new Archivos.Xml<Gimnasio>();
-            auxLeer.leer("Gimnasio.xml", out gim);
+            //gim = null;
+            //Archivos.Xml<Gimnasio> auxLeer= new Archivos.Xml<Gimnasio>();
+            //auxLeer.leer("Gimnasio.xml", out gim);
 
         }
     }

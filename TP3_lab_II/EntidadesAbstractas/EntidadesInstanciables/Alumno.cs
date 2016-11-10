@@ -22,22 +22,9 @@ namespace EntidadesInstanciables
         private Gimnasio.EClases _claseQueToma;
         private EEstadoCuenta _estadoCuenta;
 
-        // eliminar
+        // <para serializar>=========================
             public Alumno() { }
-        //private string chota;
-        //public string Chota
-        //{
-        //    get 
-        //    {
-        //        this.chota = "CHOOOTAAA";
-        //        return this.chota;
-        //    }
-        //    set 
-        //    {
-        //        this.chota = "HOLAA";            
-        //    }
-        //}
-            //son para serializar
+
             public Gimnasio.EClases ClaseQueToma
             {
                 get
@@ -61,7 +48,7 @@ namespace EntidadesInstanciables
                     this._estadoCuenta = value;
                 }
             }
-        // </eliminar>
+        // </para serializar>
 
 
         public Alumno(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad, Gimnasio.EClases claseQueToma)

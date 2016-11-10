@@ -27,15 +27,6 @@ namespace Archivos
             return b;
         }
 
-
-
-
-        //public bool leer(string archivo, out Texto datos)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-
         public bool leer(string archivo, out string datos)
         {
             throw new NotImplementedException();
