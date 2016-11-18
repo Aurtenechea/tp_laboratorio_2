@@ -1,0 +1,456 @@
+JORNADA:
+CLASE DE Natacion POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Natacion
+Yoga
+
+ALUMNOS: 
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Pilates
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+CrossFit
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE Natacion POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Natacion
+Natacion
+
+ALUMNOS: 
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE Natacion POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Natacion
+Pilates
+
+ALUMNOS: 
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE Pilates POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Pilates
+Pilates
+
+ALUMNOS: 
+NOMBRE COMPLETO: Smith, Rodrigo
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE Pilates
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Natacion
+CrossFit
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Pilates
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Natacion
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Pilates
+CrossFit
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Yoga
+CrossFit
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE Pilates POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Pilates
+Pilates
+
+ALUMNOS: 
+NOMBRE COMPLETO: Smith, Rodrigo
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE Pilates
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Yoga
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Yoga
+CrossFit
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Yoga
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE Pilates POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Pilates
+Yoga
+
+ALUMNOS: 
+NOMBRE COMPLETO: Smith, Rodrigo
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE Pilates
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Yoga
+CrossFit
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Yoga
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE Natacion POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Yoga
+Natacion
+
+ALUMNOS: 
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE Pilates POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Pilates
+Yoga
+
+ALUMNOS: 
+NOMBRE COMPLETO: Smith, Rodrigo
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE Pilates
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+Pilates
+CrossFit
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
+JORNADA:
+CLASE DE CrossFit POR NOMBRE COMPLETO: Juarez, Roberto
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 
+CLASES DEL DIA: 
+CrossFit
+Natacion
+
+ALUMNOS: 
+NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Mes de prueba
+TOMA CLASES DE CrossFit
+
+NOMBRE COMPLETO: Gonzalez, Carlos
+NACIONALIDAD: Argentino
+CARNET NUMERO: 
+ESTADO DE LA CUENTA: Cuota al dia
+TOMA CLASES DE CrossFit
+
+<------------------------------------------------------------------------>
+
