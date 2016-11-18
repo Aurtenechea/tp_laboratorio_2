@@ -13,6 +13,18 @@ namespace Archivos
     public class Xml<T> : IArchivo<T> where T : class
     {
 
+        #region metodos
+
+        /// <summary>
+        /// Guarda como Xml en un archivo llamado como el parametro "archivo" los datos contenidos en el parametro "datos".
+        /// Lanza una excepcion ArchivosException si no pudo guardar.
+        /// </summary>
+        /// <param name="archivo">Nombre del archivo en el que se desea guardar.</param>
+        /// <param name="datos">Datos a guardar en el archivo.</param>
+        /// <returns>
+        /// true si se pudo guardar.
+        /// false si no. 
+        /// </returns>
         public bool guardar(string archivo, T datos)
         {
             bool aux = false;
@@ -27,18 +39,22 @@ namespace Archivos
             }
             catch
             {
-                throw new ArchivosException();
+                throw new Exception("No se pudo guardar el archivo como Xml.");
+                //throw new ArchivosException("No se pudo guardar en el archivo.");
             }
-
-            //catch (Exception e)
-            //{
-
-            //    Console.WriteLine(e.Message);
-            //    Console.ReadKey();
-            //}
             return aux;
         }
 
+        /// <summary>
+        /// Lee del archivo llamado como el parametro "archivo" y los guarda en el parametro "datos".
+        /// Lanza una excepcion ArchivosException si no pudo leer.
+        /// </summary>
+        /// <param name="archivo">Nombre del archivo del que se desea leer.</param>
+        /// <param name="datos">Donde se cargaran los datos leidos del archivo.</param>
+        /// <returns>
+        /// true si se pudo Leer.
+        /// false si no. 
+        /// </returns>
         public bool leer(string archivo, out T datos) 
         {
             bool result = false;
@@ -51,16 +67,17 @@ namespace Archivos
                     result = true;
                 }
             }
-            catch (Exception e)
+            catch 
             {
                 datos = null;
-                Console.WriteLine(e.Message);
-                Console.ReadKey();
+                throw new Exception("No se pudo leer del archivo.");
+                //throw new ArchivosException("No se pudo leer del archivo.");
             }
             
             return result;
         }
 
-      
+        #endregion
+
     }
 }

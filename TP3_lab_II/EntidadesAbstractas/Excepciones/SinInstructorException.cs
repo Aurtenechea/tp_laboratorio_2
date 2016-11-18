@@ -8,10 +8,14 @@ namespace Excepciones
 {
     public class SinInstructorException : Exception
     {
+        #region constructores
+
         public SinInstructorException()
             : base("No hay instructor para la clase.")
         {
-            
+
         }
+
+        #endregion
     }
 }

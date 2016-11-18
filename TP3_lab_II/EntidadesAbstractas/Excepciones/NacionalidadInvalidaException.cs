@@ -8,10 +8,20 @@ namespace Excepciones
 {
     public class NacionalidadInvalidaException : Exception
     {
+        #region
+
+        public NacionalidadInvalidaException(string message)
+            : base(message)
+        {
+
+        }
+
         public NacionalidadInvalidaException()
             : base("La nacionalidad es invalida.")
         {
-            
+
         }
+
+        #endregion
     }
 }

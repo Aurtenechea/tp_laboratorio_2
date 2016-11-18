@@ -8,10 +8,14 @@ namespace Excepciones
 {
     public class AlumnoRepetidoException: Exception
     {
+        #region constructores
+
         public AlumnoRepetidoException():base("Alumno repetido.")
         {
-            
+
         }
+
+        #endregion
 
     }
 }

@@ -8,13 +8,18 @@ using EntidadesAbstractas;
 namespace EntidadesInstanciables
 {
     [Serializable]
-    sealed public class Instructor : PersonaGimnasio  
+    sealed public class Instructor : PersonaGimnasio
     {
+
+        #region atributos
 
         private Queue <Gimnasio.EClases> _clasesDelDia;
         private static Random _random;
 
-        //eliminar
+        #endregion
+
+        #region para serializar
+
         public Gimnasio.EClases[] ClasesDelDia
         {
             get
@@ -30,23 +35,30 @@ namespace EntidadesInstanciables
 
         }
         public Instructor() { }
-        //</eliminar>
+
+        #endregion
 
 
-        private void _randomClases()
-        {
-            this._clasesDelDia.Enqueue((Gimnasio.EClases)Instructor._random.Next(0, 4));
-            //Console.WriteLine( Instructor._random.Next(0, 3) );
-            
-        }
-        
+        #region constructores
 
+        /// <summary>
+        /// Inicializa el atributo estatico random del instructor.
+        /// </summary>
         static Instructor()
-        {   // en el pdf es private pero da error.
+        {   
+            // en el pdf es private pero da error.
             // como hereda, implicitamente llama al constructor del padre por defecto al menos que se explicite algun otro.
             _random = new Random();
         }
 
+        /// <summary>
+        /// Inicializa los campos id, nombre, apellido, dni, nacionalidad , clases del dia (con 2 clases elegidas de forma aleatoria).
+        /// </summary>
+        /// <param name="id">Id del instructor</param>
+        /// <param name="nombre">Nombre del instructor</param>
+        /// <param name="apellido">Apellido del instructor</param>
+        /// <param name="dni">Dni del instructor</param>
+        /// <param name="nacionalidad">Nacionalidad del instructor</param>
         public Instructor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id, nombre, apellido, dni, nacionalidad)
         {
@@ -57,11 +69,27 @@ namespace EntidadesInstanciables
             }
         }
 
+        #endregion
+
+        #region metodos
+        /// <summary>
+        /// Asigna dos clases al azar al aatributo ClasesDelDia del instructor.
+        /// </summary>
+        private void _randomClases()
+        {
+            this._clasesDelDia.Enqueue((Gimnasio.EClases)Instructor._random.Next(0, 4));
+        }
+        
+
+        
+        /// <summary>
+        /// Devuelve un string con los datos del instructor.
+        /// </summary>
+        /// <returns>string con los datos del instructor.</returns>
         protected string MostrarDatos()
         { 
             StringBuilder sb = new StringBuilder();
             sb.AppendLine("CARNET NUMERO: ");
-            // falta id
             sb.AppendLine("CLASES DEL DIA: ");
             sb.AppendLine(this._clasesDelDia.ElementAt(0).ToString());
             sb.AppendLine(this._clasesDelDia.ElementAt(1).ToString());
@@ -69,11 +97,31 @@ namespace EntidadesInstanciables
             return sb.ToString() ;
         }
 
+
+        /// <summary>
+        /// Compara si el instructor "i" da la clase "clase".
+        /// </summary>
+        /// <param name="i">Instructor.</param>
+        /// <param name="clase">Clase que se quiere comparar con el instructor.</param>
+        /// <returns>
+        /// false si el instructor da esa clase.
+        /// true si no la da.
+        /// </returns>
         public static bool operator !=(Instructor i, Gimnasio.EClases clase)
         {
             return !(i == clase);
         }
 
+
+        /// <summary>
+        /// Compara si el instructor "i" da la clase "clase".
+        /// </summary>
+        /// <param name="i">Instructor.</param>
+        /// <param name="clase">Clase que se quiere comparar con el instructor.</param>
+        /// <returns>
+        /// true si el instructor da esa clase.
+        /// false si no la da.
+        /// </returns>
         public static bool operator ==(Instructor i, Gimnasio.EClases clase)
         {
             bool flag = false;
@@ -85,15 +133,30 @@ namespace EntidadesInstanciables
             return flag;
         }
 
+        /// <summary>
+        /// Retorna la cadena "CLASES DEL DÍA " junto al nombre de la clases que da.
+        /// </summary>
+        /// <returns>
+        /// Retorna la cadena "CLASES DEL DÍA " junto al nombre de la clases que da.
+        /// </returns>
         protected override string ParticiparEnClase() 
         {
             return "CLASES DEL DIA " + this._clasesDelDia.ToString();
         }
 
+
+        /// <summary>
+        /// Devuelve un string con los datos del instructor.
+        /// </summary>
+        /// <returns> 
+        /// string con los datos del instructor.
+        /// </returns>
         public string ToString() 
         {
             return this.MostrarDatos();
         }
+
+        #endregion
 
     }
 }
