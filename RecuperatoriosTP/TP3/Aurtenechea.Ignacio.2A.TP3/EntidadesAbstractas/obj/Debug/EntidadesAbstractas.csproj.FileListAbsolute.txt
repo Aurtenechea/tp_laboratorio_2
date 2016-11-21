@@ -1,9 +1,0 @@
-D:\aurtenechea.ignacio\interfaces2\EntidadesAbstractas\EntidadesAbstractas\bin\Debug\EntidadesAbstractas.exe.config
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\obj\Debug\EntidadesAbstractas.csprojResolveAssemblyReference.cache
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\bin\Debug\EntidadesAbstractas.pdb
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\obj\Debug\EntidadesAbstractas.pdb
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\bin\Debug\Excepciones.pdb
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\bin\Debug\EntidadesAbstractas.dll.config
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\bin\Debug\EntidadesAbstractas.dll
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\bin\Debug\Excepciones.dll
-C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\EntidadesAbstractas\obj\Debug\EntidadesAbstractas.dll
