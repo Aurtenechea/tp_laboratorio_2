@@ -454,3 +454,20 @@ TOMA CLASES DE CrossFit
 
 <------------------------------------------------------------------------>
 
+JORNADA:
+CLASE DE Natacion POR NOMBRE COMPLETO: Lopez, Juan
+NACIONALIDAD: Argentino
+
+CARNET NUMERO: 1
+CLASES DEL DIA 
+Natacion
+Yoga
+ALUMNOS: 
+NOMBRE COMPLETO: Suarez, Joaquin
+NACIONALIDAD: Extranjero
+
+CARNET NUMERO: 7
+
+ESTADO DE CUENTA: AlDiaTOMA CLASES DE Natacion
+<------------------------------------------------------------------------>
+

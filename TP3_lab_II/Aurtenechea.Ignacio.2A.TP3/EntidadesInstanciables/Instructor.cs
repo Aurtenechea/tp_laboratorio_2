@@ -81,22 +81,6 @@ namespace EntidadesInstanciables
         }
         
 
-        
-        /// <summary>
-        /// Devuelve un string con los datos del instructor.
-        /// </summary>
-        /// <returns>string con los datos del instructor.</returns>
-        protected string MostrarDatos()
-        { 
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("CARNET NUMERO: ");
-            sb.AppendLine("CLASES DEL DIA: ");
-            sb.AppendLine(this._clasesDelDia.ElementAt(0).ToString());
-            sb.AppendLine(this._clasesDelDia.ElementAt(1).ToString());
-
-            return sb.ToString() ;
-        }
-
 
         /// <summary>
         /// Compara si el instructor "i" da la clase "clase".
@@ -141,9 +125,23 @@ namespace EntidadesInstanciables
         /// </returns>
         protected override string ParticiparEnClase() 
         {
-            return "CLASES DEL DIA " + this._clasesDelDia.ToString();
+            return "CLASES DEL DIA " + "\n" + this._clasesDelDia.ElementAt(0).ToString() + "\n" + this._clasesDelDia.ElementAt(1).ToString();
         }
 
+        /// <summary>
+        /// Devuelve un string con los datos del instructor.
+        /// </summary>
+        /// <returns>string con los datos del instructor.</returns>
+        protected string MostrarDatos()
+        {
+            //StringBuilder sb = new StringBuilder();
+            //sb.AppendLine("CARNET NUMERO: ");
+            //sb.AppendLine("CLASES DEL DIA: ");
+            //sb.AppendLine(this._clasesDelDia.ElementAt(0).ToString());
+            //sb.AppendLine(this._clasesDelDia.ElementAt(1).ToString());
+            //return sb.ToString();
+            return base.MostrarDatos() + "\n" + this.ParticiparEnClase();
+        }
 
         /// <summary>
         /// Devuelve un string con los datos del instructor.

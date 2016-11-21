@@ -92,33 +92,38 @@ namespace EntidadesInstanciables
         #region metodos
 
         /// <summary>
+        /// Retorna la cadena "TOMA CLASE DE " junto al nombre de la clase que toma el Alumno.
+        /// </summary>
+        /// <returns>Retorna la cadena "TOMA CLASE DE " junto al nombre de la clase que toma el Alumno.</returns>
+        protected override string ParticiparEnClase()
+        {
+            //creo que es mas correcto que el metodo se llame participaEnClaseDe o participo, no participar.
+            return "TOMA CLASES DE " + this._claseQueToma;
+        }
+
+
+        /// <summary>
         /// Devuelve un string con los datos del Alumno.
         /// </summary>
         /// <returns>string con los datos del Alumno.</returns>
         protected override string MostrarDatos()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine("NOMBRE COMPLETO: " + this.Apellido + ", " + this.Nombre);
-            sb.AppendLine("NACIONALIDAD: " + this.Nacionalidad);
-            sb.AppendLine("CARNET NUMERO: ");
-            // falta id
-            string s = "";
+            string s = base.MostrarDatos() + "\n\nESTADO DE CUENTA: "; 
             switch (this._estadoCuenta)
             {
                 case EEstadoCuenta.Deudor:
-                    s = "Deudor";
+                    s += "Deudor";
                     break;
                 case EEstadoCuenta.MesPrueba:
-                    s="Mes de prueba";
+                    s += "Mes de prueba";
                     break;
                 case EEstadoCuenta.AlDia:
-                    s = "Cuota al dia";
+                    s += "Cuota al dia";
                     break;
             }
-            sb.AppendLine("ESTADO DE LA CUENTA: " + s);
-            sb.AppendLine(this.ParticiparEnClase());
-            
-            return sb.ToString();   
+
+            s += "\n" + this.ParticiparEnClase();
+            return s;   
         }
 
         /// <summary>
@@ -127,20 +132,8 @@ namespace EntidadesInstanciables
         /// <returns>string con los datos del Alumno.</returns>
         public string ToString()
         {
-            StringBuilder sb = new StringBuilder(this.MostrarDatos());
-            return sb.ToString();
+            return this.MostrarDatos();
         }
-
-
-        /// <summary>
-        /// Retorna la cadena "TOMA CLASE DE " junto al nombre de la clase que toma el Alumno.
-        /// </summary>
-        /// <returns>Retorna la cadena "TOMA CLASE DE " junto al nombre de la clase que toma el Alumno.</returns>
-        protected override string ParticiparEnClase()
-        {
-            return "TOMA CLASES DE " + this._claseQueToma;
-        }
-
 
         /// <summary>
         /// Compara si el alumno "a" toma la clase "clase".

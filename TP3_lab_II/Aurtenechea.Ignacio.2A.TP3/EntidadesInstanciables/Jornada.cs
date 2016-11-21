@@ -137,12 +137,13 @@ namespace EntidadesInstanciables
         {
            StringBuilder sb = new StringBuilder();
            sb.AppendLine("JORNADA:");
-           sb.AppendLine("CLASE DE " + this._clase + " POR NOMBRE COMPLETO: " + this._instructor.Apellido + ", " + this._instructor.Nombre);
-           sb.AppendLine("NACIONALIDAD: " + this._instructor.Nacionalidad);
-           sb.AppendLine("");
-           sb.AppendLine(this._instructor.ToString());
+           //sb.AppendLine("CLASE DE " + this._clase + " POR NOMBRE COMPLETO: " + this._instructor.Apellido + ", " + this._instructor.Nombre);
+           sb.AppendLine("CLASE DE " + this._clase + " POR " + this._instructor.ToString());           
+           //sb.AppendLine("NACIONALIDAD: " + this._instructor.Nacionalidad);
+           //sb.AppendLine("");
+           //sb.AppendLine(this._instructor.ToString());
 
-           sb.AppendLine("ALUMNOS: ");
+           sb.AppendLine("\nALUMNOS: ");
            
            foreach (Alumno item in this._alumnos)
            {
@@ -202,8 +203,8 @@ namespace EntidadesInstanciables
         {
             if (!(j == a)) // si no existe alumno en la jornada agregarlo. No pide que se valide que el alumno toma esa clase.
             {
-                
-                j._alumnos.Add(a);
+                if( ((PersonaGimnasio)a) != ((PersonaGimnasio)j._instructor) )
+                     j._alumnos.Add(a);
                 
             }
             return j;

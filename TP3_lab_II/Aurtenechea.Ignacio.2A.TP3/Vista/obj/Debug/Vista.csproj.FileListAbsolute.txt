@@ -1,0 +1,14 @@
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\Vista.exe.config
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\Vista.exe
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\Vista.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\EntidadesAbstractas.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\Excepciones.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\Archivos.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\EntidadesAbstractas.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\EntidadesInstanciables.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\Excepciones.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\Archivos.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\obj\Debug\Vista.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\obj\Debug\Vista.exe
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\obj\Debug\Vista.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Vista\bin\Debug\EntidadesInstanciables.dll

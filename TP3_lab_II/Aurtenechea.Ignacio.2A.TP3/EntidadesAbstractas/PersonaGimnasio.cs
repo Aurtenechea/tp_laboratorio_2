@@ -48,19 +48,20 @@ namespace EntidadesAbstractas
         #region metodos
 
         /// <summary>
-        /// Dos PersonaGimnasio son iguales si son del mismo tipo y su id o DNI son iguales.
+        /// Devuelve si dos PersonaGimnasio son del mismo tipo.
         /// </summary>
         /// <param name="obj">Objeto con el cual se quiere comparar this.</param>
         /// <returns>
-        /// true si son iguales.
+        /// true si son del mismo tipo.
         /// false si no lo son.
         /// </returns>
         public bool Equals(object obj)
         {
-            if (obj is PersonaGimnasio)
-                return (((PersonaGimnasio)obj) == this);
-            else
-                return false;
+            // No aclara que pide.
+            // si pide que haga lo mismo que el == entonces esta mal.
+            // para poder darle un uso puse que retorne si son del mismo tipo.
+            return (obj is PersonaGimnasio);
+            
         }
 
         /// <summary>
@@ -69,8 +70,7 @@ namespace EntidadesAbstractas
         /// <returns> string con los datos de una persona gimnasio.</returns>
         protected virtual string MostrarDatos()
         {
-            return this.ToString() + this._identificador.ToString();
-
+            return base.ToString() + "\nCARNET NUMERO: " + this._identificador.ToString();
         }
 
         protected abstract string ParticiparEnClase();
@@ -86,7 +86,7 @@ namespace EntidadesAbstractas
         /// </returns>
         public static bool operator == (PersonaGimnasio pg1, PersonaGimnasio pg2)
         {
-            if (pg1.GetType() == pg2.GetType() && (pg1.DNI == pg2.DNI || pg1._identificador == pg2._identificador) )
+            if ( pg1.Equals(pg2) && (pg1.DNI == pg2.DNI || pg1._identificador == pg2._identificador))
                 return true;
                 return false;
         }

@@ -14,11 +14,5 @@ namespace Excepciones
 
         }
 
-        ////no va
-        //public ArchivosException(string s)
-        //    : base(s)
-        //{
-            
-        //}
     }
 }

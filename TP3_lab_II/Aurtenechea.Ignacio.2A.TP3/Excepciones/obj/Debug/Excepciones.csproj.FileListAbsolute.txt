@@ -4,3 +4,9 @@ C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\E
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Excepciones\bin\Debug\Excepciones.dll.config
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Excepciones\bin\Debug\Excepciones.dll
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\EntidadesAbstractas\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Excepciones\bin\Debug\Excepciones.dll.config
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Excepciones\obj\Debug\Excepciones.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\Excepciones\obj\Debug\Excepciones.pdb

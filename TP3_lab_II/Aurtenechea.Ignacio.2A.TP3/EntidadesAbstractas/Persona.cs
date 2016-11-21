@@ -40,10 +40,14 @@ namespace EntidadesAbstractas
             }
             set 
             {
-                Regex RgxUrl = new Regex("[^A-Z a-z]"); 
-                bool containsSpecialCharacters = RgxUrl.IsMatch(value);
-                if(!containsSpecialCharacters)
+                if (ValidarNombreApellido(value))
+                {
                     this._nombre = value;
+                }
+                else 
+                {
+                    throw new Exception("Nombre invalido.");
+                }
             }
         }
        
@@ -59,15 +63,19 @@ namespace EntidadesAbstractas
             }
             set
             {
-                Regex RgxUrl = new Regex("[^A-Z a-z]");
-                bool containsSpecialCharacters = RgxUrl.IsMatch(value);
-                if (!containsSpecialCharacters)
+                if (ValidarNombreApellido(value))
+                {
                     this._apellido = value;
+                }
+                else
+                {
+                    throw new Exception("Apellido invalido.");
+                }
             }
         }
 
         /// <summary>
-        /// Retornara o guardara el dni de la persona. Al guardarlo prev,iamente sera validado segun su nacionalidad.
+        /// Retornara o guardara el dni de la persona. Al guardarlo previamente sera validado segun su nacionalidad.
         /// </summary>
         public int DNI
         {
@@ -104,14 +112,7 @@ namespace EntidadesAbstractas
         {
             set 
             {
-
                 this._dni = ValidarDni(this.Nacionalidad, value);
-
-                //int aux  =ValidarDni(this.Nacionalidad, value)
-                //if(aux != 0)
-                //    this._dni = aux;
-                //else 
-                //    throw new DniInvalidoException();
             }
         }
 
@@ -177,7 +178,9 @@ namespace EntidadesAbstractas
         /// <returns>string con los datos de la persona.</returns>
         public string ToString()
         {
-            StringBuilder sb = new StringBuilder(this.Nombre + this.Apellido + this.DNI.ToString() + this.Nacionalidad.ToString());
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine("NOMBRE COMPLETO: " + this.Apellido + ", " + this.Nombre);
+            sb.AppendLine("NACIONALIDAD: " + this.Nacionalidad);
             return sb.ToString();
         }
 
@@ -191,15 +194,23 @@ namespace EntidadesAbstractas
         /// la nacionalidad es extranjero.
         /// 0. Si no es ninguno de los casos anteriores. 
         /// </returns>
-        private int ValidarDni(ENacionalidad nacionalidad, int dato) 
+        private static int ValidarDni(ENacionalidad nacionalidad, int dato) 
         {
-            if (nacionalidad == ENacionalidad.Argentino && dato <= 89999999 && dato >= 1)
-                return dato;
-            else if (nacionalidad == ENacionalidad.Extranjero && dato <= 99999999 && dato >= 90000000)
-                return dato;
-            else
-                //throw new DniInvalidoException();
-                return 0;
+            if (nacionalidad == ENacionalidad.Argentino && (dato > 89999999 || dato < 1))
+                throw new NacionalidadInvalidaException();
+            if (nacionalidad == ENacionalidad.Extranjero && (dato > 99999999 || dato < 90000000))
+                throw new NacionalidadInvalidaException();
+            return dato;
+
+            /*
+             * sigo pensando que esta mal. Si a uno le pasan una persona en la que no se corresponden los datos
+             * no se tiene como determinar si lo que esta mal es el dni o su nacionalidad.
+             * Y no esta explicitado en el PDF. Solo que el main captura NacionalidadInvalidaException,
+             * con lo cual para mi también esta mal.
+             * Por ej podrian poner una nacionalidad extranjero. Al ingresar el dni se comen un numero y ahi sale la excepcion 
+             * nacionalidad invalida, cosa que no es cierta. La nacionalidad es correcta, es el dni el que es invalido para esa nacionalidad.
+             * Yo crearia una excepcion: NacionalidadDniNoCorrespondientesException()
+             */
         }
 
 
@@ -216,11 +227,21 @@ namespace EntidadesAbstractas
         private int ValidarDni(ENacionalidad nacionalidad, string dato)
         {
             int numero;
-            bool b = int.TryParse(dato, out numero);
-            if(b)
-                return ValidarDni(nacionalidad, numero);
-                return 0;
+            if (!int.TryParse(dato, out numero))
+                throw new DniInvalidoException();
+            return ValidarDni(nacionalidad, numero);
         }
+
+        private bool ValidarNombreApellido(string value) 
+        {
+            Regex RgxUrl = new Regex("[^A-Z a-záéíóú]");
+            bool containsSpecialCharacters = RgxUrl.IsMatch(value);
+            if (!containsSpecialCharacters)
+                return true;
+            return false;
+        }
+
+
 
         #endregion
 

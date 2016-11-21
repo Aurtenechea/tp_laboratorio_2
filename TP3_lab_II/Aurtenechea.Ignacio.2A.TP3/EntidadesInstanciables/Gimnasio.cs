@@ -146,7 +146,6 @@ namespace EntidadesInstanciables
         /// <returns>string con los datos de un gimnasio.</returns>
         private static string MostrarDatos(Gimnasio gim)
         { 
-            
             StringBuilder sb=new StringBuilder();
             foreach (var item in gim._jornadas)
             {
