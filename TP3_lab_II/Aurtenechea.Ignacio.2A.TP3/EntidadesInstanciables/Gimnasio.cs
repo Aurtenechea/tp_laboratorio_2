@@ -106,7 +106,6 @@ namespace EntidadesInstanciables
             {
                 Archivos.Xml<Gimnasio> objXml = new Archivos.Xml<Gimnasio>();
                 b = objXml.guardar("Gimnasio.xml", gim);
-                
             }
             catch (Exception e)
             {

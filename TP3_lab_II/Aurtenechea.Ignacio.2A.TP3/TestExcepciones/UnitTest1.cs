@@ -4,8 +4,6 @@ using EntidadesAbstractas;
 using Excepciones;
 using EntidadesInstanciables;
 
-
-
 namespace TestExcepciones
 {
     [TestClass]
