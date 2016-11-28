@@ -1,5 +1,0 @@
-C:\Users\Nacho\Desktop\TP4\Navegador TP-4 - AlumnoV2\Excepciones\bin\Debug\Excepciones.dll
-C:\Users\Nacho\Desktop\TP4\Navegador TP-4 - AlumnoV2\Excepciones\bin\Debug\Excepciones.pdb
-C:\Users\Nacho\Desktop\TP4\Navegador TP-4 - AlumnoV2\Excepciones\obj\Debug\Excepciones.csprojResolveAssemblyReference.cache
-C:\Users\Nacho\Desktop\TP4\Navegador TP-4 - AlumnoV2\Excepciones\obj\Debug\Excepciones.dll
-C:\Users\Nacho\Desktop\TP4\Navegador TP-4 - AlumnoV2\Excepciones\obj\Debug\Excepciones.pdb

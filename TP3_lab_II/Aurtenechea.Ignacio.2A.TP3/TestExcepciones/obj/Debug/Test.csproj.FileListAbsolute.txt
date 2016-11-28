@@ -1,0 +1,13 @@
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\TestExcepciones.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\TestExcepciones.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\EntidadesAbstractas.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\EntidadesInstanciables.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\Excepciones.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\Archivos.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\EntidadesAbstractas.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\EntidadesInstanciables.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\Excepciones.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\bin\Debug\Archivos.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\obj\Debug\TestExcepciones.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP3_lab_II\Aurtenechea.Ignacio.2A.TP3\TestExcepciones\obj\Debug\TestExcepciones.pdb
