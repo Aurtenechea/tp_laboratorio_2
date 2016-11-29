@@ -16,10 +16,19 @@ namespace Clase_12_Library
         }
 
         #region "Constructores"
+        
+        /// <summary>
+        /// Constructor por defecto. Solo es utillizado por otros constructores.
+        /// </summary>
         private Concecionaria()
         {
             this._vehiculos = new List<Vehiculo>();
         }
+
+        /// <summary>
+        /// Constructor publico, inicializa los campos de la concecionaria.
+        /// </summary>
+        /// <param name="espacioDisponible"></param>
         public Concecionaria(int espacioDisponible) :this()
         {
             this._espacioDisponible = espacioDisponible;
@@ -30,7 +39,7 @@ namespace Clase_12_Library
         /// <summary>
         /// Muestro la concecionaria y TODOS los vehículos
         /// </summary>
-        /// <returns></returns>
+        /// <returns>String con todos los datos de la concecionaria.</returns>
         public string ToString()
         {
             return Concecionaria.Mostrar(this, ETipo.Todos);
@@ -45,7 +54,7 @@ namespace Clase_12_Library
         /// </summary>
         /// <param name="concecionaria">Concecionaria a exponer</param>
         /// <param name="ETipo">Tipos de Vehiculos a mostrar</param>
-        /// <returns></returns>
+        /// <returns>String con los datos que se pidio mostrar segun lo que se haya pasado como parametro.</returns>
         public static string Mostrar(Concecionaria concecionaria, ETipo tipoDeVehiculo)
         {
             StringBuilder sb = new StringBuilder();
@@ -57,12 +66,15 @@ namespace Clase_12_Library
                 switch (tipoDeVehiculo)
                 {
                     case ETipo.Automovil:
+                        if(v is Automovil)
                         sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Moto:
+                        if (v is Moto)                        
                         sb.AppendLine(v.Mostrar());
                         break;
                     case ETipo.Camion:
+                        if (v is Camion)
                         sb.AppendLine(v.Mostrar());
                         break;
                     default:
@@ -70,31 +82,39 @@ namespace Clase_12_Library
                         break;
                 }
             }
-
             return sb.ToString();
         }
         #endregion
 
         #region "Operadores"
         /// <summary>
-        /// Agregará un vehículo a la concecionaria, siempre que haya espacio disponible
+        /// Agregará un vehículo a la concecionaria, siempre que haya espacio disponible y este no este cargado previamete.
         /// </summary>
         /// <param name="concecionaria">Objeto del tipo Concecionaria donde se agregará el vehículo</param>
         /// <param name="vehiculo">Objeto del tipo Vehículo a agregar</param>
-        /// <returns></returns>
+        /// <returns>Concecionaria con el vehiculo cargado o no segun corresponda.</returns>
         public static Concecionaria operator +(Concecionaria concecionaria, Vehiculo vehiculo)
         {
-            if (concecionaria._vehiculos.Count >= concecionaria._espacioDisponible)
-                return concecionaria;
-            foreach (Vehiculo v in concecionaria._vehiculos)
+            bool hayLugar = false;
+            bool yaExiste = false;
+            if (concecionaria._vehiculos.Count < concecionaria._espacioDisponible)
             {
-                if (v == vehiculo)
-                    return concecionaria;
+                hayLugar = true;
+                foreach (Vehiculo v in concecionaria._vehiculos)
+                {
+                    if (v == vehiculo)
+                    {
+                        yaExiste = true;
+                        break;
+                    }
+                }
             }
-
-            concecionaria._vehiculos.Add(vehiculo);
+            if(!yaExiste && hayLugar)
+                concecionaria._vehiculos.Add(vehiculo);
             return concecionaria;
         }
+
+
         /// <summary>
         /// Quitará un vehículo de la concecionaria
         /// </summary>
@@ -111,7 +131,6 @@ namespace Clase_12_Library
                     break;
                 }
             }
-
             return concecionaria;
         }
         #endregion

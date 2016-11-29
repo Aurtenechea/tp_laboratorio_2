@@ -16,3 +16,8 @@ C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP2_lab_II\A
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\obj\Debug\Clase_12_Library.pdb
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\bin\Debug\Clase_12_Library.dll
 C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\bin\Debug\Clase_12_Library.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\RecuperatoriosTP\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\bin\Debug\Clase_12_Library.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\RecuperatoriosTP\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\bin\Debug\Clase_12_Library.pdb
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\RecuperatoriosTP\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\obj\Debug\Clase_12_Library.csprojResolveAssemblyReference.cache
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\RecuperatoriosTP\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\obj\Debug\Clase_12_Library.dll
+C:\Users\Nacho\Documents\programas\programasCsharp\tp_laboratorio_2\RecuperatoriosTP\TP2_lab_II\Alumno_Clase_12\Clase_12_Library\obj\Debug\Clase_12_Library.pdb

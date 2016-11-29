@@ -25,6 +25,8 @@ namespace Clase_12
             Automovil a3 = new Automovil(Vehiculo.EMarca.Scania, "IOP852", ConsoleColor.Green);
 
             // Agrego 6 ítems (los últimos 2 no deberían poder agregarse) y muestro
+            
+            //ERROR SON 7!
             concecionaria += c1;
             concecionaria += c2;
             concecionaria += m1;
