@@ -159,8 +159,9 @@ namespace Navegador
                 Uri direccionWeb;
                 Descargador descargador;
                 Thread t;
-                
-                direccionWeb = new Uri("http://" + this.txtUrl.Text);
+
+                this.txtUrl.Text = "http://" + this.txtUrl.Text;
+                direccionWeb = new Uri(this.txtUrl.Text);
                 descargador = new Descargador(direccionWeb);
 
                 // a los eventos del objeto descargador le registro sus respectivos manejadores...

@@ -34,13 +34,14 @@ namespace Archivos
             {
                 using (StreamWriter escritor = new StreamWriter(this.direccionArchivo, true))
                 {
-                    escritor.WriteLine(datos.Remove((int)datos.LongCount()-1));
+                    escritor.WriteLine(datos.Remove((int)datos.LongCount() - 1));
                 }
             }
             catch
             {
                 throw new ArchivosException("No se pudo guardar en el archivo de texto.");
             }
+            
         }
 
         /// <summary>
@@ -57,14 +58,18 @@ namespace Archivos
             try
             {
                 lector = new StreamReader(this.direccionArchivo);
-                while ( null !=  (s = lector.ReadLine()) )
-	            {
+                while (null != (s = lector.ReadLine()))
+                {
                     datos.Add(s);
-	            }
+                }
             }
             catch
             {
                 throw new ArchivosException("No se pudo leer del archivo de texto.");
+            }
+            finally
+            {
+                lector.Close();
             }
         }
     }
